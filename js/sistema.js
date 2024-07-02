@@ -1,19 +1,5 @@
-//$('#mainContent').empty();
-//$('#mainContent').load("view/login.html");
+$('#mainContent').empty();
 $(".site-header").show();
-/*
-var _user = {};
-
-function catalogoUsuarios() {
-	if(_user.perfil == "admin"){
-		$('#contenido').empty();
-		$('#contenido').load("view/catalogos/usuarios.html");
-	}
-	else{
-		alert("No tiene permiso");
-	}    
-}
-*/
 
 
 var max = 40;
@@ -34,7 +20,7 @@ function cargaMenu(){
 			productos = hoja.productos;
 			if(hoja.orientacion == 'L'){
 				
-				//salida += '';
+				//salida += '<img src="img/logo.png" style="width:100px;padding-left:2em;"/>';
 				salida += '<div class="col-sm-12 col-md-12 col-lg-12" align="center">'+'<img src="img/logo.png" style="width:120px;padding-left:1em;"/>'+'<font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: 4rem;">MEN&Uacute;</font></div>';
 				salida += '<div class="col-sm-12 col-md-12 col-lg-12" align="center"><font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: 3rem;">'+hoja.nombre+'</font></div>' ;
 			}else if(hoja.orientacion == 'C'){
@@ -108,7 +94,7 @@ function cargaMenu(){
 					salida +=	'		<tr style="width:100%;">'+
 								'			<td>'+
 						        '				<div class="col-sm-12 col-md-12 col-lg-12" align="center">'+
-								'					<font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: '+calculaTamanio(nombre)+'rem;">'+nombre+'</font>'+
+								'					&nbsp;&nbsp;&nbsp;&nbsp;<font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: '+calculaTamanio(nombre)+'rem;">'+nombre+'</font>&nbsp;&nbsp;&nbsp;&nbsp;'+
 								'				</div>' ;
 								'			</td>'+
 								'		</tr>'
@@ -130,7 +116,7 @@ function cargaMenu(){
 				  '		<div style="border-radius: 5px; background: #F1B15E; width: 360px;">'+
 				  '			<font style="color: #FE1D17; font-family: '+"'"+'Cooper Black'+"'"+', sans-serif; font-size: 1.5rem;">Av. Dolores S/N. Barrio Tlatilco. Teoloyucan.</font>'+
 				  '		</div>'+
-				  '</div>';				  
+				  '</div>';	
 				  
 		salida += '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
 				  '		<font style="color: #DE697A; font-family: Areal; font-size: 1.4rem;">*Referencia: arriba de tacos y hamburgesas los 3 Montoya </font>'+
@@ -142,24 +128,22 @@ function cargaMenu(){
 		
   
 	} 
-	
-	
-	
+
 	salida += '</br></br></br></br>';
 		
-	salida += '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em;">'+
+	salida += '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
 			  '		<label class="sr-only">Nombre</label>' +
 			  '     <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre" required autofocus>'+
 			  '</div>'+
-			  '<div class="col-sm-12 col-md-12 col-lg-6"  style="padding-left:2em;">'+
+			  '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
 			  '		<button class="btn btn-lg btn-outline-primary btn-block" onclick="cargarMensaje(); return false;">Generar</button>' +
 			  '</div>'+
-			  '<div class="col-sm-12 col-md-12 col-lg-6"  style="padding-left:2em;">'+
+			  '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
 			  '		<button class="btn btn-lg btn-outline-primary btn-block" onclick="borrarMensaje(); return false;">Borrar</button>' +
 			  '</div>';
-	
-	salida += '</br></br>';			  
-	
+
+	salida += '</br></br>';
+
 	var idUserLogin = localStorage.getItem('idUserLogin');
 	if( idUserLogin == null || idUserLogin == "false"){
 		salida += '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em;">'+
@@ -199,7 +183,7 @@ function cargaMenu(){
 			  
 	salida += '</br></br>';
 	
-	$('#mainContent').empty();
+	$('#mainContent').empty();	
 	$('#mainContent').append(salida);
 	
 }
@@ -323,11 +307,11 @@ function borrarMensaje(){
 	$("#nombre").val("");
 	_listaproductos = [];
 	_mensaje= "";
-	_detalles = "";
+	_detalles = "";	
 }
 
 function enviarMensaje(){
-	window.open('https://api.whatsapp.com/send?phone=5541401197&text='+'origen:menu '+' mensaje:' +_mensaje); 
+	window.open('https://api.whatsapp.com/send?phone=5564281401&text='+'origen:menu '+' mensaje:' +_mensaje); 
 }
 
 function verImagen(id){
@@ -391,7 +375,6 @@ function iniciaSesion(){
 			localStorage.setItem('idUserLogin','true');
 			localStorage.setItem('currenUser',JSON.stringify(usuario));
 			$("#modalDialogBusquedas").modal('hide');	
-			cargaMenu();
 			existeUsuario = true;
 			_currenUser = usuario;	
 			break;
@@ -400,6 +383,8 @@ function iniciaSesion(){
 	
 	if(!existeUsuario){
 		alert("El usuario o password es incorrecto");
+	}else{
+		top.location = "/ama";
 	}
 }
 
@@ -536,8 +521,6 @@ function cerrarSesion(){
 }
 
 cargaMenu();
-
-
 /*
 document.addEventListener("contextmenu", function(event){
 	event.preventDefault();
@@ -548,5 +531,4 @@ document.addEventListener("copy", function(event){
 	event.clipboardData.setData("text/plain", "No se permite copiar en esta página web");
 	// Prevent the default copy action
 	event.preventDefault();
-}, false);
-*/
+}, false);*/
