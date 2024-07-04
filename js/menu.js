@@ -22,33 +22,36 @@ var productos_2 = [
 					{id:18, name:"CLUB SANDWICH EMPANIZADO", nombre:"CLUB S&Aacute;NDWICH EMPANIZADO", precio:127, descripcion:"Tres rebanadas de pan de la casa relleno de pechuga de pollo empanizada, jam&oacute;n de pavo, tocino, queso gouda, mayonesa, lechuga, jitomate, cebolla.  Se sirve con 150 grs. de papas a la francesa."},
 					{id:19, name:"BANIALO CON QUESO", nombre:"BA&Ntilde;ALO CON QUESO", precio:15, descripcion:"Ba&ntilde;a de queso gouda el pepito o s&aacute;ndwich de tu preferencia."},
 					{id:20, name:"PONLE HUEVITO", nombre:"PONLE HUEVITO", precio:10, descripcion:"Acompa&ntilde;a de huevo al gusto el s&aacute;ndwich favorito."},
+					
+                  ];				  
+				  
+var productos_3 = [
 					{id:21, name:"BONELESS", nombre:"BONELESS", precio:97, descripcion:"200 grs de cuadros de pechuga preparados como alitas ba&ntilde;ados en salsa de tu elecci&oacute;n."},
 					{id:22, name:"1 KG BONELESS", nombre:"	1 KG BONELESS", precio:395, descripcion:"1 kg de cuadros de pechuga pechuga preparados como alitas ba&ntilde;ados en salsa de tu elecci&oacute;n."},
 					{id:23, name:"ALITAS", nombre:"ALITAS", precio:87, descripcion:"6 pzs alitas ba&ntilde;ados en salsa de tu elecci&oacute;n."},
 					{id:24, name:"24 PZS ALITAS", nombre:"	24 PZS ALITAS", precio:295, descripcion:"Alitas ba&ntilde;ados en salsa de tu elecci&oacute;n."},
+	
+					{id:25, name:"MANGO HABANERO", nombre:"(*) MANGO HABANERO", precio:10, descripcion:""},
+					{id:26, name:"BBQ HABANERO", nombre:"(*) BBQ HABANERO", precio:10, descripcion:""},
+					{id:27, name:"HABANERO CREAM", nombre:"(*) HABANERO CREAM", precio:10, descripcion:""},
+					{id:28, name:"X HOT", nombre:"(*) X HOT", precio:10, descripcion:""},
+					{id:29, name:"BUFALO", nombre:"(*) BUFALO", precio:10, descripcion:""},
+					{id:30, name:"MANGO HOT", nombre:"(*) MANGO HOT", precio:10, descripcion:""},
+					{id:31, name:"TAMARINDO CHIPOTLE", nombre:"(*) TAMARINDO CHIPOTLE", precio:10, descripcion:""},
+					{id:32, name:"MEZCAL", nombre:"(*) MEZCAL", precio:10, descripcion:""},
+					{id:33, name:"BBQ", nombre:"(*) BBQ", precio:10, descripcion:""},
+					{id:34, name:"AJO PARMESANO", nombre:"(*) AJO PARMESANO", precio:10, descripcion:""},
+					{id:35, name:"ALITAS", nombre:"(*) ALITAS", precio:10, descripcion:""},
+					{id:36, name:"PIMIENTA & LIMON", nombre:"(*) PIMIENTA & LIM&Oacute;N", precio:10, descripcion:""},
 					
-					{id:39, name:"ADEREZO EXTRA", nombre:"ADEREZO EXTRA", precio:10, descripcion:""},
-					{id:40, name:"SALSA EXTRA", nombre:"SALSA EXTRA", precio:10, descripcion:""},
+					{id:37, name:"ADEREZO RANCH", nombre:" * ADEREZO RANCH", precio:10, descripcion:""},
+					{id:38, name:"ADEREZO QUESO AZUL", nombre:" * ADEREZO QUESO AZUL", precio:10, descripcion:""},
+
+					//{id:39, name:"ADEREZO EXTRA", nombre:"ADEREZO EXTRA", precio:10, descripcion:""},
+					//{id:40, name:"SALSA EXTRA", nombre:"SALSA EXTRA", precio:10, descripcion:""},
 					{id:41, name:"PAPAS A LA FRANCESA", nombre:"PAPAS A LA FRANCESA", precio:35, descripcion:"100 grs de papas, queso amarillo y salsas."},
 					{id:42, name:"PAPAS GAJO", nombre:"PAPAS GAJO", precio:39, descripcion:"100 grs de papas gajo, queso amarillo y salsas."},
-                  ];				  
-				  
-var productos_3 = [
-					{id:25, name:"", nombre:"(*) MANGO HABANERO", precio:0, descripcion:""},
-					{id:26, name:"", nombre:"(*) BBQ HABANERO", precio:0, descripcion:""},
-					{id:27, name:"", nombre:"(*) HABANERO CREAM", precio:0, descripcion:""},
-					{id:28, name:"", nombre:"(*) X HOT", precio:0, descripcion:""},
-					{id:29, name:"", nombre:"(*) BUFALO", precio:0, descripcion:""},
-					{id:30, name:"", nombre:"(*) MANGO HOT", precio:0, descripcion:""},
-					{id:31, name:"", nombre:"(*) TAMARINDO CHIPOTLE", precio:0, descripcion:""},
-					{id:32, name:"", nombre:"(*) MEZCAL", precio:0, descripcion:""},
-					{id:33, name:"", nombre:"(*) BBQ", precio:0, descripcion:""},
-					{id:34, name:"", nombre:"(*) AJO PARMESANO", precio:0, descripcion:""},
-					{id:35, name:"", nombre:"(*) ALITAS", precio:0, descripcion:""},
-					{id:36, name:"", nombre:"(*) PIMIENTA & LIM&Oacute;N", precio:0, descripcion:""},
-					
-					{id:37, name:"", nombre:" * ADEREZO RANCH", precio:0, descripcion:""},
-					{id:38, name:"", nombre:" * ADEREZO QUESO AZUL", precio:0, descripcion:""},
+	
                   ];				  				  
 				  
 
@@ -102,7 +105,7 @@ var productos_7 = [
 
 var hoja_1 = {img:"1", orientacion :"L", nombre:"PA' BOTANIAR", productos:productos_1};
 var hoja_2 = {img:"2", orientacion :"L", nombre:"PEPITOS Y CLUB S&Aacute;NDWICH", productos:productos_2};
-var hoja_3 = {img:"3", orientacion :"C", nombre:"SALSAS", productos:productos_3};
+var hoja_3 = {img:"3", orientacion :"L", nombre:"SALSAS", productos:productos_3};
 var hoja_4 = {img:"4", orientacion :"L", nombre:"BEBIDAS FR&Iacute;AS CON ALCOHOL", productos:productos_4};
 var hoja_5 = {img:"5", orientacion :"L", nombre:"BEBIDAS FR&Iacute;AS SIN ALCOHOL", productos:productos_5};
 var hoja_6 = {img:"6", orientacion :"L", nombre:"BEBIDAS CALIENETES Y FR&Iacute;AS", productos:productos_6};
