@@ -11,8 +11,11 @@ var _currenUser = {};
 function cargaMenu(){
 	
 	var salida = '';
-	
-	
+
+	salida += '<div class="row">';
+	salida += '	<div class="col-sm-12 col-md-12 col-lg-12" align="center">'+'<img src="img/logo.png" style="width:120px;padding-left:1em;"/>'+'<font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: 4rem;">MEN&Uacute;</font></div>';
+	salida += '</div>'
+		
 	for(var x=0; x < menu.length; x++){
 		var hoja = menu[x];
 		
@@ -21,7 +24,7 @@ function cargaMenu(){
 			if(hoja.orientacion == 'L'){
 				
 				//salida += '<img src="img/logo.png" style="width:100px;padding-left:2em;"/>';
-				salida += '<div class="col-sm-12 col-md-12 col-lg-12" align="center">'+'<img src="img/logo.png" style="width:120px;padding-left:1em;"/>'+'<font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: 4rem;">MEN&Uacute;</font></div>';
+				//salida += '<div class="col-sm-12 col-md-12 col-lg-12" align="center">'+'<img src="img/logo.png" style="width:120px;padding-left:1em;"/>'+'<font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: 4rem;">MEN&Uacute;</font></div>';
 				salida += '<div class="col-sm-12 col-md-12 col-lg-12" align="center"><font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: 3rem;">'+hoja.nombre+'</font></div>' ;
 			}else if(hoja.orientacion == 'C'){
 				salida += '<div class="col-sm-12 col-md-12 col-lg-12" align="center"><font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: 3rem;">'+hoja.nombre+'</font></div>' ;	
@@ -108,28 +111,28 @@ function cargaMenu(){
 
 		salida += '</br></br></br></br>';
 		
-		salida += '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
-				  '		<font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: 2rem;">HAZ TU PEDIDO: (55) 64281401 </font>'+
-				  '</div>';
-
-		salida += '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
-				  '		<div style="border-radius: 5px; background: #F1B15E; width: 360px;">'+
-				  '			<font style="color: #FE1D17; font-family: '+"'"+'Cooper Black'+"'"+', sans-serif; font-size: 1.5rem;">Av. Dolores S/N. Barrio Tlatilco. Teoloyucan.</font>'+
-				  '		</div>'+
-				  '</div>';	
-				  
-		salida += '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
-				  '		<font style="color: #DE697A; font-family: Areal; font-size: 1.4rem;">*Referencia: arriba de tacos y hamburgesas los 3 Montoya </font>'+
-				  '</div>';				  				  
-				  
-		salida += '</br></br></br></br>';				  
-		
 	    salida += '</div>';
 		
   
 	} 
 
 	salida += '</br></br></br></br>';
+	
+	salida += '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
+			  '		<font style="color: #D43854; font-family: '+"'"+'Algeria'+"'"+', sans-serif; font-size: 2rem;">HAZ TU PEDIDO: (55) 64281401 </font>'+
+			  '</div>';
+
+	salida += '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
+			  '		<div style="border-radius: 5px; background: #F1B15E; width: 360px;">'+
+			  '			<font style="color: #FE1D17; font-family: '+"'"+'Cooper Black'+"'"+', sans-serif; font-size: 1.5rem;">Av. Dolores S/N. Barrio Tlatilco. Teoloyucan.</font>'+
+			  '		</div>'+
+			  '</div>';	
+			  
+	salida += '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
+			  '		<font style="color: #DE697A; font-family: Areal; font-size: 1.4rem;">*Referencia: arriba de tacos y hamburgesas los 3 Montoya </font>'+
+			  '</div>';				  				  
+			  
+	salida += '</br></br></br></br>';				  
 		
 	salida += '<div class="col-sm-12 col-md-12 col-lg-12"  style="padding-left:2em; align="left">'+
 			  '		<label class="sr-only">Nombre</label>' +
