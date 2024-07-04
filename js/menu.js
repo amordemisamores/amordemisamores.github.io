@@ -31,18 +31,18 @@ var productos_3 = [
 					{id:23, name:"ALITAS", nombre:"ALITAS", precio:87, descripcion:"6 pzs alitas ba&ntilde;ados en salsa de tu elecci&oacute;n."},
 					{id:24, name:"24 PZS ALITAS", nombre:"	24 PZS ALITAS", precio:295, descripcion:"Alitas ba&ntilde;ados en salsa de tu elecci&oacute;n."},
 	
-					{id:25, name:"MANGO HABANERO", nombre:"(*) MANGO HABANERO", precio:10, descripcion:""},
-					{id:26, name:"BBQ HABANERO", nombre:"(*) BBQ HABANERO", precio:10, descripcion:""},
-					{id:27, name:"HABANERO CREAM", nombre:"(*) HABANERO CREAM", precio:10, descripcion:""},
-					{id:28, name:"X HOT", nombre:"(*) X HOT", precio:10, descripcion:""},
-					{id:29, name:"BUFALO", nombre:"(*) BUFALO", precio:10, descripcion:""},
-					{id:30, name:"MANGO HOT", nombre:"(*) MANGO HOT", precio:10, descripcion:""},
-					{id:31, name:"TAMARINDO CHIPOTLE", nombre:"(*) TAMARINDO CHIPOTLE", precio:10, descripcion:""},
-					{id:32, name:"MEZCAL", nombre:"(*) MEZCAL", precio:10, descripcion:""},
-					{id:33, name:"BBQ", nombre:"(*) BBQ", precio:10, descripcion:""},
-					{id:34, name:"AJO PARMESANO", nombre:"(*) AJO PARMESANO", precio:10, descripcion:""},
-					{id:35, name:"ALITAS", nombre:"(*) ALITAS", precio:10, descripcion:""},
-					{id:36, name:"PIMIENTA & LIMON", nombre:"(*) PIMIENTA & LIM&Oacute;N", precio:10, descripcion:""},
+					{id:25, name:"MANGO HABANERO", nombre:"(*) SALSA MANGO HABANERO", precio:10, descripcion:""},
+					{id:26, name:"BBQ HABANERO", nombre:"(*) SALSA BBQ HABANERO", precio:10, descripcion:""},
+					{id:27, name:"HABANERO CREAM", nombre:"(*) SALSA HABANERO CREAM", precio:10, descripcion:""},
+					{id:28, name:"X HOT", nombre:"(*) SALSA X HOT", precio:10, descripcion:""},
+					{id:29, name:"BUFALO", nombre:"(*) SALSA BUFALO", precio:10, descripcion:""},
+					{id:30, name:"MANGO HOT", nombre:"(*) SALSA MANGO HOT", precio:10, descripcion:""},
+					{id:31, name:"TAMARINDO CHIPOTLE", nombre:"(*) SALSA TAMARINDO CHIPOTLE", precio:10, descripcion:""},
+					{id:32, name:"MEZCAL", nombre:"(*) SALSA MEZCAL", precio:10, descripcion:""},
+					{id:33, name:"BBQ", nombre:"(*) SALSA BBQ", precio:10, descripcion:""},
+					{id:34, name:"AJO PARMESANO", nombre:"(*) SALSA AJO PARMESANO", precio:10, descripcion:""},
+					//{id:35, name:"ALITAS", nombre:"(*) ALITAS", precio:10, descripcion:""},
+					{id:36, name:"PIMIENTA & LIMON", nombre:"(*) SALSA PIMIENTA & LIM&Oacute;N", precio:10, descripcion:""},
 					
 					{id:37, name:"ADEREZO RANCH", nombre:" * ADEREZO RANCH", precio:10, descripcion:""},
 					{id:38, name:"ADEREZO QUESO AZUL", nombre:" * ADEREZO QUESO AZUL", precio:10, descripcion:""},
@@ -105,7 +105,7 @@ var productos_7 = [
 
 var hoja_1 = {img:"1", orientacion :"L", nombre:"PA' BOTANIAR", productos:productos_1};
 var hoja_2 = {img:"2", orientacion :"L", nombre:"PEPITOS Y CLUB S&Aacute;NDWICH", productos:productos_2};
-var hoja_3 = {img:"3", orientacion :"L", nombre:"SALSAS", productos:productos_3};
+var hoja_3 = {img:"3", orientacion :"L", nombre:" ", productos:productos_3};
 var hoja_4 = {img:"4", orientacion :"L", nombre:"BEBIDAS FR&Iacute;AS CON ALCOHOL", productos:productos_4};
 var hoja_5 = {img:"5", orientacion :"L", nombre:"BEBIDAS FR&Iacute;AS SIN ALCOHOL", productos:productos_5};
 var hoja_6 = {img:"6", orientacion :"L", nombre:"BEBIDAS CALIENETES Y FR&Iacute;AS", productos:productos_6};
